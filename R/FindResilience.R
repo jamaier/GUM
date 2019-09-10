@@ -7,7 +7,7 @@
 #' @export
 FindResilience<-function(Data)
 {
-  ResData<-unique(Data[c("SciName")])
+  ResData<-unique(Data[c("IdOrig","SciName", "VonBertK","AgeMat")])
   #ResNames<-validate_names(ResData$SciName)
   
   RESout<-stocks(ResData$SciName, fields="Resilience")
